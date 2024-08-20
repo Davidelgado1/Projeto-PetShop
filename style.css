@@ -1,0 +1,268 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff9a;
+}
+
+header {
+    background-image: url('./img/WhatsApp\ Image\ 2024-08-17\ at\ 20.37.24.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #6b3c7c;
+}
+
+nav .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    color: #ffd700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: #6b3c7c;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+
+.hero {
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    background-color: rgba(0, 0, 0, 0.601);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta-button {
+    background-color: #7f4b94;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6b3c7c;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+.services,
+.about,
+.form-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services h2,
+.about h2,
+.contact h2,
+.form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin-bottom: 20px;
+    font-size: 25px;
+    align-items: center;
+}
+
+.about p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Formulário */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    /* Aumentando a largura máxima */
+    margin: 0 auto;
+    padding: 30px;
+    /* Aumentando as margens internas */
+    background-color: #f0f8ff;
+    /* Fundo azul claro */
+    border-radius: 15px;
+    /* Arredondando os cantos */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* Sombra mais pronunciada */
+}
+
+.form-section form label {
+    margin-bottom: 10px;
+    /* Aumentando o espaço entre o label e o campo */
+    font-weight: bold;
+    color: #333;
+}
+
+.form-section form input,
+.form-section form textarea {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-section form button {
+    background-color: #7f4b94;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section form button:hover {
+    background-color: #6b3c7c;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.contact p,
+.contact address {
+    font-size: 1.1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    main {
+        padding: 30px 10px;
+    }
+
+    .services h2,
+    .about h2,
+    .contact h2,
+    .form-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about p,
+    .service-item {
+        font-size: 1rem;
+    }
+
+    .hero-text {
+        padding: 15px
+    }
+}
